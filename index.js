@@ -1,8 +1,5 @@
 // code your solution here
 function superbowlWin (result) {
-    for (const wonYear of result) {
-        if (wonYear.result === "W") {
-            return wonYear.year;
-        }
-    }
-}
+    const wonYear = result.find (record => record.result ==="W")
+    return wonYear ? wonYear.year : undefined
+} 
